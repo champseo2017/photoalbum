@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router';
+import { Link } from 'react-router';
 import { Navbar } from "react-bulma-components/full";
 
 class Header extends Component{
@@ -21,8 +21,8 @@ class Header extends Component{
           </Navbar.Brand>
           <Navbar.Menu>
             <Navbar.Container>
-                <Navbar.Item href="/">Home</Navbar.Item>
-                <Navbar.Item href="/user">Photo</Navbar.Item>
+                <Link className="navbar-item" to="/">Home</Link>
+                <Link className="navbar-item" to="/user">Photo</Link>
             </Navbar.Container>
           </Navbar.Menu>
             </Navbar>
